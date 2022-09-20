@@ -1,4 +1,7 @@
 public class MyClass {
+    static void coba(){
+        
+    }
     public static void main(String[] args) {
         // String namaDepan = "roxyzc", namaBelakang = "zxocy", coba =
         // "jkasdjabsjdbansdbajkakh";
