@@ -1,5 +1,5 @@
 public class Belajar {
-    // int x = 1;
+    int x = 10;
     // String namaDepan = "Fauzhan", namaBelakang = "Qhof";
     // String[] coba = { "coba", "lagi" };
 
@@ -15,14 +15,14 @@ public class Belajar {
         // perulangan(2, "fauzhan");
 
         // int i = angka(1);
-        int a = coba(2);
+        // int a = coba(2);
 
         // nggak bisa karena pake void;
-        String coba1 = coba();
+        // String coba1 = coba();
 
         // System.out.print(i);
-        System.out.printf("%d \n", a);
-        System.out.print(coba1);
+        // System.out.printf("%d \n", a);
+        // System.out.print(coba1);
     }
 
     // void tidak mengembalikan data
@@ -40,13 +40,13 @@ public class Belajar {
     // }
 
     // error jika pake void
-    static int coba(int i) {
-        return i + 1;
-    }
+    // static int coba(int i) {
+    // return i + 1;
+    // }
 
-    static String coba() {
-        return "coba";
-    }
+    // static String coba() {
+    // return "coba";
+    // }
 
     // static int angka(int i) {
     // while (i < 10) {

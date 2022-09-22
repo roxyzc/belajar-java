@@ -1,7 +1,5 @@
 public class MyClass {
-    static void coba() {
-
-    }
+    String nama = "nama";
 
     public static void main(String[] args) {
         // String namaDepan = "roxyzc", namaBelakang = "zxocy", coba =
@@ -61,8 +59,8 @@ public class MyClass {
         // System.out.println(angka);
         // }
 
-        String[] objek = { "roxyzc", "zxocy", "rozy", "manusia" };
-        System.out.println(objek[3]);
+        // String[] objek = { "roxyzc", "zxocy", "rozy", "manusia" };
+        // System.out.println(objek[3]);
         // for (String i : objek) {
         // System.out.println(i);
         // }
