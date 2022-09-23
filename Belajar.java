@@ -5,7 +5,6 @@ public class Belajar {
 
     public static void main(String[] args) {
         // Belajar myObj = new Belajar();
-
         // int i = (int) (Math.random() * 2);
         // System.out.println(myObj.x);
         // System.out.println(myObj.coba[i]);

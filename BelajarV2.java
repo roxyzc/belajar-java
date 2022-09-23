@@ -1,32 +1,104 @@
+// import java.util.*;
+
+interface FirstInterface {
+    public void myMethod(); // interface method
+}
+
+interface SecondInterface {
+    public void myOtherMethod(); // interface method
+}
+
 abstract class Main {
+    private String npc = "roxyzc";
+    protected String MC = npc;
+
     public abstract void coba();
+}
+
+abstract class AnimalSound {
+    public abstract void animalSound();
+}
+
+class Animal extends AnimalSound {
+    int x = 10;
+
+    public void animalSound() {
+        System.out.print("Moooo\n");
+    }
+
+    class InnerClass {
+        int y = 5;
+    }
+
+    static class innerClass1 {
+        int z = 15;
+    }
+}
+
+class DemoClass implements FirstInterface, SecondInterface {
+    public void myMethod() {
+        System.out.println("Some text..");
+    }
+
+    public void myOtherMethod() {
+        System.out.println("Some other text...");
+    }
 }
 
 public class BelajarV2 extends Main {
     public int x;
     public byte nilaiUlangan;
     final String coba = "roxyzc";
+    String nama;
 
+    // contructor
     public BelajarV2(int i, byte nilai) {
-        x = i;
-        nilaiUlangan = nilai;
+        this.x = i;
+        this.nilaiUlangan = nilai;
     }
 
+    // abstract function
     public void coba() {
-        System.out.printf("\n%s", coba);
+        System.out.print("coba");
+    }
+
+    // setter
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    // getter
+    public String getNama() {
+        return this.nama;
     }
 
     public static void main(String[] args) {
-        BelajarV2 belajar = new BelajarV2(3, (byte) 100);
+        BelajarV2 belajar = new BelajarV2(6, (byte) 100);
+        Animal animal = new Animal();
+        Animal.InnerClass animal1 = animal.new InnerClass();
+        Animal.innerClass1 animal2 = new Animal.innerClass1();
+        DemoClass demo = new DemoClass();
+        System.out.printf("%d %d %d\n", animal.x, animal1.y, animal2.z);
+        demo.myMethod();
+        demo.myOtherMethod();
+        animal.animalSound();
+        // try (Scanner inputNama = new Scanner(System.in)) {
         // coba.Awal namaNya = new coba.Awal();
+        // System.out.printf("\n%s", namaNya);
+        // System.out.println("Masukkan nama anda:");
+        // String nama = inputNama.nextLine();
+        // belajar.setNama(nama);
+        // } catch (Error Error) {
+        // System.out.print(Error);
+        // }
         cekUmur((byte) belajar.x);
         nilaiUlangan(belajar.nilaiUlangan);
         int i = sum((int) belajar.x);
-        System.out.printf("%d nama: %s", i, belajar.coba);
-        belajar.coba();
-        // System.out.printf("\n%s", namaNya);
+        System.out.printf("%d nama: %s MCnya %s\n", i, belajar.coba, belajar.MC);
+        // System.out.print(belajar.getNama());
     }
 
+    // function
     static void cekUmur(byte umur) {
         if (umur <= 0) {
             System.out.printf("nggak bisa karena umur %d tidak ada \n", umur);
@@ -36,9 +108,10 @@ public class BelajarV2 extends Main {
             System.out.print("anda sudah dewasa \n");
             return;
         }
-        System.out.print("anda belum dewasa \n");
+        System.out.printf("anda belum dewasa karena umur anda %d \n", umur);
     }
 
+    // function
     static void nilaiUlangan(byte nilai) {
         if (nilai < 0 || nilai > 100) {
             System.out.printf("Error: Fatal karena nilai %d tidak ada \n", nilai);
@@ -58,7 +131,7 @@ public class BelajarV2 extends Main {
     }
 
     // rekursif
-    public static int sum(int i) {
+    static int sum(int i) {
         if (i > 0) {
             return i + sum(i - 1);
         }
