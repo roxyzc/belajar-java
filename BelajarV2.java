@@ -74,20 +74,21 @@ public class BelajarV2 extends Main {
 
     public static void main(String[] args) {
         BelajarV2 belajar = new BelajarV2(6, (byte) 100);
-        Animal animal = new Animal();
-        Animal.InnerClass animal1 = animal.new InnerClass();
-        Animal.innerClass1 animal2 = new Animal.innerClass1();
-        DemoClass demo = new DemoClass();
-        System.out.printf("%d %d %d\n", animal.x, animal1.y, animal2.z);
-        demo.myMethod();
-        demo.myOtherMethod();
-        animal.animalSound();
+        // Animal animal = new Animal();
+        // Animal.InnerClass animal1 = animal.new InnerClass();
+        // Animal.innerClass1 animal2 = new Animal.innerClass1();
+        // DemoClass demo = new DemoClass();
+        // System.out.printf("%d %d %d\n", animal.x, animal1.y, animal2.z);
+        // demo.myMethod();
+        // demo.myOtherMethod();
+        // animal.animalSound();
         // try (Scanner inputNama = new Scanner(System.in)) {
         // coba.Awal namaNya = new coba.Awal();
         // System.out.printf("\n%s", namaNya);
         // System.out.println("Masukkan nama anda:");
         // String nama = inputNama.nextLine();
         // belajar.setNama(nama);
+        // System.out.printf("namanya: %s\n", nama);
         // } catch (Error Error) {
         // System.out.print(Error);
         // }
