@@ -139,7 +139,7 @@ public class BelajarLanjutan {
             System.out.println(e);
         }
 
-        checkKata("tolol");
+        checkKata("anjing");
 
     }
 

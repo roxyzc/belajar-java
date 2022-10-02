@@ -4,7 +4,7 @@ public class Belajar {
     // String[] coba = { "coba", "lagi" };
 
     public static void main(String[] args) {
-        // Belajar myObj = new Belajar();
+        Belajar myObj = new Belajar();
         // int i = (int) (Math.random() * 2);
         // System.out.println(myObj.x);
         // System.out.println(myObj.coba[i]);
@@ -19,7 +19,7 @@ public class Belajar {
         // nggak bisa karena pake void;
         // String coba1 = coba();
 
-        // System.out.print(i);
+        System.out.print(myObj.x);
         // System.out.printf("%d \n", a);
         // System.out.print(coba1);
     }
